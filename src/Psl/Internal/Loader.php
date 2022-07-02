@@ -477,6 +477,8 @@ final class Loader
         'Psl\OS\family',
         'Psl\OS\is_windows',
         'Psl\OS\is_darwin',
+        'Psl\Option\some',
+        'Psl\Option\none',
     ];
 
     public const INTERFACES = [
@@ -561,6 +563,7 @@ final class Loader
         'Psl\Vec\Exception\ExceptionInterface',
         'Psl\Dict\Exception\ExceptionInterface',
         'Psl\PseudoRandom\Exception\ExceptionInterface',
+        'Psl\Option\Exception\ExceptionInterface',
     ];
 
     public const TRAITS = [
@@ -735,6 +738,8 @@ final class Loader
         'Psl\Iter\Exception\InvalidArgumentException',
         'Psl\PseudoRandom\Exception\InvalidArgumentException',
         'Psl\Async\Exception\InvalidArgumentException',
+        'Psl\Option\Exception\NoneException',
+        'Psl\Option\Option',
     ];
 
     public const ENUMS = [
