@@ -21,7 +21,6 @@ final class PsrClock implements ClockInterface
         $timestamp = DateTime\Timestamp::fromParts($nativeDateTime->getTimestamp());
 
         $timezone = $nativeDateTime->getTimezone();
-        invariant($timezone !== false, 'Could not get the timezone object.');
 
         $timezone = DateTime\Timezone::from($timezone->getName());
 
