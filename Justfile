@@ -24,6 +24,9 @@ fix:
 analyze:
     ./vendor/bin/mago --config config/mago.toml analyze
 
+phpstan:
+    ./vendor/bin/phpstan analyse -c config/phpstan.dist.neon src tests
+
 bench:
     ./vendor/bin/phpbench run --config config/phpbench.json
 
