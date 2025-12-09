@@ -31,6 +31,6 @@ no-error-control-operator = { enabled = false }
 no-redundant-use = { enabled = true }
 
 [analyzer]
-excludes = ["tests"]
+excludes = ["tests/unit", "tests/benchmark"]
 ignore = ["possibly-static-access-on-interface"]
 strict-list-index-checks = true
